@@ -6,8 +6,8 @@
 }
 
 html,body{
-    overflow:scroll;
-    overflow-x: hidden;
+    overflow:visible;
+    
 
 }
 
@@ -20,7 +20,7 @@ html,body{
 
 .page{
     position: relative;
-    
+    overflow-x: hidden;
 }
 
 
