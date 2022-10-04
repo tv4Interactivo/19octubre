@@ -6,7 +6,9 @@
 }
 
 html,body{
-    overflow:auto;
+    overflow:scroll;
+    overflow-x: hidden;
+
 }
 
 .scene
@@ -18,7 +20,7 @@ html,body{
 
 .page{
     position: relative;
-    overflow-x: hidden;
+    
 }
 
 
