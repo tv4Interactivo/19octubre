@@ -63971,7 +63971,9 @@ __webpack_require__.r(__webpack_exports__);
 gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger); //ESCENA
 
 var scene = new three__WEBPACK_IMPORTED_MODULE_3__.Scene();
-scene.background = new three__WEBPACK_IMPORTED_MODULE_3__.Color('#000'); //MODELS
+scene.background = new three__WEBPACK_IMPORTED_MODULE_3__.Color('#000'); //CANVAS
+
+var canvas = document.querySelector('canvas.scene'); //MODELS
 
 var geometry = new three__WEBPACK_IMPORTED_MODULE_3__.BoxGeometry(1, 1, 1);
 var material = new three__WEBPACK_IMPORTED_MODULE_3__.MeshBasicMaterial({
@@ -64021,6 +64023,7 @@ var hemisphereLight = new three__WEBPACK_IMPORTED_MODULE_3__.HemisphereLight('#2
 scene.add(hemisphereLight); //RENDERER
 
 var renderer = new three__WEBPACK_IMPORTED_MODULE_3__.WebGLRenderer({
+  canvas: canvas,
   antialias: true
 });
 renderer.setSize(sizes.width, sizes.height);
@@ -64030,9 +64033,7 @@ renderer.outputEncoding = three__WEBPACK_IMPORTED_MODULE_3__.sRGBEncoding;
 renderer.toneMapping = three__WEBPACK_IMPORTED_MODULE_3__.ReinhardToneMapping;
 renderer.toneMappingExposure = 3;
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = three__WEBPACK_IMPORTED_MODULE_3__.PCFSoftShadowMap;
-var sceneContainer = document.querySelector('.scene');
-sceneContainer.appendChild(renderer.domElement); //TICK
+renderer.shadowMap.type = three__WEBPACK_IMPORTED_MODULE_3__.PCFSoftShadowMap; //TICK
 
 var tick = function tick() {
   renderer.render(scene, camera);
