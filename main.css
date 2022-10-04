@@ -2,7 +2,9 @@
 {
     margin: 0;
     padding: 0;
+    color: white;
 }
+
 
 .scene
 {
@@ -11,8 +13,15 @@
     left: 0;
 }
 
-html,
-body
-{
-    overflow: hidden;
+.page{
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    outline: solid red 1px;
 }
