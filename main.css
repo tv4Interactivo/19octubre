@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     color: white;
-    width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 .scene
@@ -13,11 +12,13 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 .page{
     position: absolute;
-    overflow-x: hidden;
+    
     
 }
 

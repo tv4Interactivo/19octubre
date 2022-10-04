@@ -64041,7 +64041,25 @@ var tick = function tick() {
   camera.lookAt(cameraTarget);
 };
 
-tick();
+tick(); //ANIMATION
+
+var section = 0;
+var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
+  defaults: {
+    ease: "sine.inOut"
+  },
+  scrollTrigger: {
+    trigger: ".page",
+    start: "top top",
+    end: "bottom bottm",
+    scrub: .2
+  }
+});
+tl.to(camera.position, {
+  x: 0,
+  y: 1,
+  z: 6
+});
 })();
 
 /******/ })()
