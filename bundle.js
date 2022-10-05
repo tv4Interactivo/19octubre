@@ -64051,7 +64051,7 @@ var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
   scrollTrigger: {
     trigger: ".page",
     start: "top top",
-    end: "bottom bottm",
+    end: "bottom bottom",
     scrub: .2
   }
 });
@@ -64060,12 +64060,6 @@ tl.to(camera.position, {
   y: 1,
   z: 6
 });
-
-function scrollWin() {
-  window.scrollTo(0, 0);
-}
-
-scrollWin();
 })();
 
 /******/ })()
