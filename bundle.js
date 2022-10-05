@@ -64060,6 +64060,12 @@ tl.to(camera.position, {
   y: 1,
   z: 6
 });
+
+function scrollWin() {
+  window.scrollTo(0, 0);
+}
+
+scrollWin();
 })();
 
 /******/ })()
