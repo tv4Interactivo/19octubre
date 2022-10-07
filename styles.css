@@ -22,7 +22,6 @@ section{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* outline: solid 1px blue;  */
 }
 
 .title{
