@@ -223,16 +223,29 @@ mm.add("(max-width: 500px)", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 2,
+            snap: 0.1111,
         }
     })
     
 
 
-    tl.to(".circle",{y:h*1.15},section*.5)
+    tl.to(".circle",{y:h*1.121,
+        "border-top-left-radius":"40%",
+        "border-bottom-left-radius":"0",
+        "border-bottom-right-radius":"0",
+        "width":"35%",
+        "height":"20.5%",
+    },section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.35},section*.5)
+    tl.to(".circle",{y:h*2.35,
+        "border-top-left-radius":"50%",
+        "border-bottom-left-radius":"50%",
+        "border-bottom-right-radius":"50%",
+        "width":"300px",
+        "height":"300px",
+    },section*.5)
 
     section+=1;
 
@@ -486,16 +499,29 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 2,
+            snap: 0.1111,
         }
     })
     
 
 
-    tl.to(".circle",{y:h*1.1},section*.5)
+    tl.to(".circle",{y:h*1.092,
+        "border-top-left-radius":"45%",
+        "border-bottom-left-radius":"0",
+        "border-bottom-right-radius":"0",
+        "width":"20%",
+        "height":"17%",
+    },section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.25},section*.5)
+    tl.to(".circle",{y:h*2.25,
+        "border-top-left-radius":"50%",
+        "border-bottom-left-radius":"50%",
+        "border-bottom-right-radius":"50%",
+        "width":"400px",
+        "height":"400px",
+    },section*.5)
 
     section+=1;
 
@@ -749,16 +775,29 @@ mm.add("(min-width:913px)", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 3,
+            snap: 0.11111,
         }
     })
     
 
 
-    tl.to(".circle",{x:0,y:h,scale:1.5},section*.5)
+    tl.to(".circle",{x:0,y:h,scale:0.5,
+        "border-top-left-radius":"40%",
+        "border-bottom-left-radius":"0",
+        "border-bottom-right-radius":"0",
+        "width":"29%",
+        "height":"75%",
+    },section*.5)
 
     section+=1;
     
-    tl.to(".circle",{x:380,y:h*2,scale:1},section*.5)
+    tl.to(".circle",{x:380,y:h*2,scale:1,
+        "border-top-left-radius":"50%",
+        "border-bottom-left-radius":"50%",
+        "border-bottom-right-radius":"50%",
+        "width":"400px",
+        "height":"400px",
+    },section*.5)
 
     section+=1;
 
