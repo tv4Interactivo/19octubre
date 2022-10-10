@@ -6,6 +6,19 @@ let mm = gsap.matchMedia();
 
 mm.add("(max-width: 500px)", () => {
 
+    gsap.from(".lapida",{
+        scrollTrigger:{
+            trigger: ".lapida",
+            start: "top 70%",
+            end: "+=70",
+            scrub: 3,
+        },
+        y:60,
+        scale: 0.5,
+        opacity:0,
+        ease: "sine.inOut",
+    });
+
     gsap.from(".img1",{
         scrollTrigger:{
             trigger: ".img1",
@@ -153,9 +166,9 @@ mm.add("(max-width: 500px)", () => {
 
     gsap.from(".info",{
         scrollTrigger:{
-            trigger: ".info",
+            trigger: ".section7",
             start: "top 80%",
-            end: "+=100",
+            end: "bottom bottom",
             scrub: 3,
         },
         x:-400,
@@ -163,6 +176,32 @@ mm.add("(max-width: 500px)", () => {
         stagger:.2,
         ease: "sine.inOut",
      });
+
+     gsap.from(".fem",{
+        scrollTrigger:{
+            trigger: ".fem",
+            start: "top 90%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:-60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
+    });
+
+    gsap.from(".masc",{
+        scrollTrigger:{
+            trigger: ".masc",
+            start: "top 90%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
+    });
 
 
     gsap.to(".liston",{
@@ -189,11 +228,11 @@ mm.add("(max-width: 500px)", () => {
     
 
 
-    tl.to(".circle",{y:h*1.3},section*.5)
+    tl.to(".circle",{y:h*1.15},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.3},section*.5)
+    tl.to(".circle",{y:h*2.35},section*.5)
 
     section+=1;
 
@@ -213,14 +252,35 @@ mm.add("(max-width: 500px)", () => {
 
     section+=1;
 
-    tl.to(".circle",{y:h*7.3, opacity:0},section*.5)
+    tl.to(".circle",{y:h*7.3},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*8.3, opacity:0},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*9.3},section*.5)
 
     section+=1;
 
 
 })
 
-mm.add("((min-width:501px) and (max-width: 840px))", () => {
+mm.add("((min-width:501px) and (max-width: 912px))", () => {
+
+    gsap.from(".lapida",{
+        scrollTrigger:{
+            trigger: ".lapida",
+            start: "top 70%",
+            end: "+=70",
+            scrub: 3,
+        },
+        y:60,
+        scale: 0.5,
+        opacity:0,
+        ease: "sine.inOut",
+    });
 
     gsap.from(".img1",{
         scrollTrigger:{
@@ -369,9 +429,9 @@ mm.add("((min-width:501px) and (max-width: 840px))", () => {
 
     gsap.from(".info",{
         scrollTrigger:{
-            trigger: ".info",
+            trigger: ".section7",
             start: "top 80%",
-            end: "+=100",
+            end: "bottom bottom",
             scrub: 3,
         },
         x:-400,
@@ -379,6 +439,32 @@ mm.add("((min-width:501px) and (max-width: 840px))", () => {
         stagger:.2,
         ease: "sine.inOut",
      });
+
+     gsap.from(".fem",{
+        scrollTrigger:{
+            trigger: ".fem",
+            start: "top 80%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:-60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
+    });
+
+    gsap.from(".masc",{
+        scrollTrigger:{
+            trigger: ".masc",
+            start: "top 90%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
+    });
 
 
     gsap.to(".liston",{
@@ -405,38 +491,59 @@ mm.add("((min-width:501px) and (max-width: 840px))", () => {
     
 
 
-    tl.to(".circle",{y:h*1.2},section*.5)
+    tl.to(".circle",{y:h*1.1},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.2},section*.5)
+    tl.to(".circle",{y:h*2.25},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*3.2},section*.5)
+    tl.to(".circle",{y:h*3.23},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*4.2},section*.5)
+    tl.to(".circle",{y:h*4.23},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*5.2},section*.5)
+    tl.to(".circle",{y:h*5.23},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*6.2},section*.5)
+    tl.to(".circle",{y:h*6.23},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*7.2, opacity:0},section*.5)
+    tl.to(".circle",{y:h*7.23},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*8.23,scale:.2,opacity:0},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*9.23},section*.5)
 
     section+=1;
 
 
 })
 
-mm.add("(min-width:841px)", () => {
+mm.add("(min-width:913px)", () => {
+
+    gsap.from(".lapida",{
+        scrollTrigger:{
+            trigger: ".lapida",
+            start: "top 60%",
+            end: "+=70",
+            scrub: 3,
+        },
+        y:60,
+        scale: 0.5,
+        opacity:0,
+        ease: "sine.inOut",
+    });
 
     gsap.from(".img1",{
         scrollTrigger:{
@@ -584,15 +691,41 @@ mm.add("(min-width:841px)", () => {
    
    gsap.from(".info",{
        scrollTrigger:{
-           trigger: ".info",
-           start: "top 80%",
-           end: "+=100",
-           scrub: 3,
+            trigger: ".section7",
+            start: "top 80%",
+            end: "bottom bottom",
+            scrub: 3,
        },
        x:-400,
        opacity:0,
        stagger:.2,
        ease: "sine.inOut",
+    });
+
+    gsap.from(".fem",{
+        scrollTrigger:{
+            trigger: ".fem",
+            start: "top 80%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:-60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
+    });
+
+    gsap.from(".masc",{
+        scrollTrigger:{
+            trigger: ".masc",
+            start: "top 80%",
+            end: "+=70",
+            scrub: 3,
+        },
+        rotation:60,
+        scale: 0.7,
+        opacity:0,
+        ease: "sine.inOut",
     });
 
     
@@ -621,31 +754,39 @@ mm.add("(min-width:841px)", () => {
     
 
 
-    tl.to(".circle",{x:380,y:h},section*.5)
+    tl.to(".circle",{x:0,y:h,scale:1.5},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{x:-380,y:h*2},section*.5)
+    tl.to(".circle",{x:380,y:h*2,scale:1},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:380,y:h*3},section*.5)
+    tl.to(".circle",{x:-380,y:h*3},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:-380,y:h*4},section*.5)
+    tl.to(".circle",{x:380,y:h*4},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:380,y:h*5},section*.5)
+    tl.to(".circle",{x:-380,y:h*5},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:-380,y:h*6},section*.5)
+    tl.to(".circle",{x:380,y:h*6},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:380,y:h*7, opacity:0},section*.5)
+    tl.to(".circle",{x:-380,y:h*7},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{x:0,y:h*8,scale:.2,opacity:0},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*9},section*.5)
 
     section+=1;
 
