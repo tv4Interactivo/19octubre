@@ -525,7 +525,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
 
     section+=1;
 
-    tl.to(".circle",{y:h*9.23},section*.5)
+    tl.to(".circle",{y:h*9.23,scale:0,opacity:0},section*.5)
 
     section+=1;
 
