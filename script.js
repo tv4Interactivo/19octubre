@@ -257,11 +257,11 @@ mm.add("(max-width: 500px)", () => {
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.3, opacity:0},section*.5)
+    tl.to(".circle",{y:h*8.1,scale:2, opacity:0.5},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*9.3},section*.5)
+    tl.to(".circle",{y:h*9.3, scale:0, opacity:0},section*.5)
 
     section+=1;
 
@@ -521,7 +521,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.23,scale:.2,opacity:0},section*.5)
+    tl.to(".circle",{y:h*8.05,scale:1.5,opacity:0.5},section*.5)
 
     section+=1;
 
@@ -785,11 +785,11 @@ mm.add("(min-width:913px)", () => {
 
     section+=1;
 
-    tl.to(".circle",{x:0,y:h*8,scale:.2,opacity:0},section*.5)
+    tl.to(".circle",{x:0,y:h*8,opacity:0.5,scale:2},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*9},section*.5)
+    tl.to(".circle",{y:h*9,scale:0, opacity:0},section*.5)
 
     section+=1;
 
