@@ -223,7 +223,7 @@ mm.add("(max-width: 500px)", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 1,
-            //snap: 0.1,
+            snap: 0.1,
         }
     })
     
