@@ -11,7 +11,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".lapida",
             start: "top 70%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         y:60,
         scale: 0.5,
@@ -24,7 +24,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img1",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -36,7 +36,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text1",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -48,7 +48,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img2",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -60,7 +60,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text2",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -72,7 +72,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img3",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -84,7 +84,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text3",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -96,7 +96,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img4",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -108,7 +108,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text4",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -121,7 +121,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img5",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -133,7 +133,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text5",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -145,7 +145,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".img6",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -157,7 +157,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".text6",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -169,7 +169,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".section7",
             start: "top 80%",
             end: "bottom bottom",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -182,7 +182,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".fem",
             start: "top 90%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:-60,
         scale: 0.7,
@@ -195,7 +195,7 @@ mm.add("(max-width: 500px)", () => {
             trigger: ".masc",
             start: "top 90%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:60,
         scale: 0.7,
@@ -222,46 +222,50 @@ mm.add("(max-width: 500px)", () => {
             trigger:".page-content",
             start: "top top",
             end: "bottom bottom",
-            scrub: 2,
-            snap: 0.1111,
+            scrub: 1,
+            //snap: 0.1,
         }
     })
     
 
 
-    tl.to(".circle",{y:h*1.13},section*.5)
+    tl.to(".circle",{y:h*0.72,rotation:90},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.3},section*.5)
+    tl.to(".circle",{y:h*1.88,scale:1.1,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*3.3},section*.5)
+    tl.to(".circle",{y:h*3.05,scale:1,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*4.3},section*.5)
+    tl.to(".circle",{y:h*4.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*5.3},section*.5)
+    tl.to(".circle",{y:h*5.05,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*6.3},section*.5)
+    tl.to(".circle",{y:h*6.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*7.3},section*.5)
+    tl.to(".circle",{y:h*7.05,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.1,scale:2, opacity:0.5},section*.5)
+    tl.to(".circle",{y:h*8.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*9.3, scale:0, opacity:0},section*.5)
+    tl.to(".circle",{y:h*8.85, scale:1.5, opacity:0.5,rotation:90},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*10.05, scale:0, opacity:0,rotation:-90},section*.5)
 
     section+=1;
 
@@ -275,7 +279,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".lapida",
             start: "top 70%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         y:60,
         scale: 0.5,
@@ -288,7 +292,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img1",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -300,7 +304,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text1",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -312,7 +316,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img2",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -324,7 +328,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text2",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -336,7 +340,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img3",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -348,7 +352,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text3",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -360,7 +364,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img4",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -372,7 +376,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text4",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -385,7 +389,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img5",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -397,7 +401,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text5",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -409,7 +413,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".img6",
             start: "top 80%",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -421,7 +425,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".text6",
             start: "top 80%",
             end: "+=200",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -433,7 +437,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".section7",
             start: "top 80%",
             end: "bottom bottom",
-            scrub: 3,
+            scrub: 2,
         },
         x:-400,
         opacity:0,
@@ -446,7 +450,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".fem",
             start: "top 80%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:-60,
         scale: 0.7,
@@ -459,7 +463,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger: ".masc",
             start: "top 90%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:60,
         scale: 0.7,
@@ -486,46 +490,50 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             trigger:".page-content",
             start: "top top",
             end: "bottom bottom",
-            scrub: 2,
-            snap: 0.1111,
+            scrub: 1,
+            // snap: 0.1,
         }
     })
     
 
 
-    tl.to(".circle",{y:h*1.1},section*.5)
+    tl.to(".circle",{y:h*0.8,rotation:90},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*2.25},section*.5)
+    tl.to(".circle",{y:h*1.9, scale:1.5,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*3.23},section*.5)
+    tl.to(".circle",{y:h*3.05,scale:1,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*4.23},section*.5)
+    tl.to(".circle",{y:h*4.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*5.23},section*.5)
+    tl.to(".circle",{y:h*5.05,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*6.23},section*.5)
+    tl.to(".circle",{y:h*6.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*7.23},section*.5)
+    tl.to(".circle",{y:h*7.05,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.05,scale:1.5,opacity:0.5},section*.5)
+    tl.to(".circle",{y:h*8.05,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*9.23,scale:0,opacity:0},section*.5)
+    tl.to(".circle",{y:h*8.85,scale:2, opacity:0.5,rotation:90},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*10.05,scale:0,opacity:0,rotation:-90},section*.5)
 
     section+=1;
 
@@ -539,7 +547,7 @@ mm.add("(min-width:913px)", () => {
             trigger: ".lapida",
             start: "top 60%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         y:60,
         scale: 0.5,
@@ -552,7 +560,7 @@ mm.add("(min-width:913px)", () => {
             trigger: ".img1",
             start: "top center",
             end: "+=80",
-            scrub: 3,
+            scrub: 2,
         },
         x:400,
         opacity:0,
@@ -564,7 +572,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".text1",
            start: "top 80%",
            end: "+=200",
-           scrub: 3,
+           scrub: 2,
        },
        x:-400,
        opacity:0,
@@ -576,7 +584,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".img2",
            start: "top center",
            end: "+=80",
-           scrub: 3,
+           scrub: 2,
        },
        x:-400,
        opacity:0,
@@ -588,7 +596,7 @@ mm.add("(min-width:913px)", () => {
           trigger: ".text2",
           start: "top 80%",
           end: "+=200",
-          scrub: 3,
+          scrub: 2,
       },
       x:400,
       opacity:0,
@@ -600,7 +608,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".img3",
            start: "top center",
            end: "+=80",
-           scrub: 3,
+           scrub: 2,
        },
        x:400,
        opacity:0,
@@ -612,7 +620,7 @@ mm.add("(min-width:913px)", () => {
           trigger: ".text3",
           start: "top 80%",
           end: "+=200",
-          scrub: 3,
+          scrub: 2,
       },
       x:-400,
       opacity:0,
@@ -624,7 +632,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".img4",
            start: "top center",
            end: "+=80",
-           scrub: 3,
+           scrub: 2,
        },
        x:-400,
        opacity:0,
@@ -636,7 +644,7 @@ mm.add("(min-width:913px)", () => {
           trigger: ".text4",
           start: "top 80%",
           end: "+=200",
-          scrub: 3,
+          scrub: 2,
       },
       x:400,
       opacity:0,
@@ -648,7 +656,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".img5",
            start: "top center",
            end: "+=80",
-           scrub: 3,
+           scrub: 2,
        },
        x:400,
        opacity:0,
@@ -660,7 +668,7 @@ mm.add("(min-width:913px)", () => {
           trigger: ".text5",
           start: "top 80%",
           end: "+=200",
-          scrub: 3,
+          scrub: 2,
       },
       x:-400,
       opacity:0,
@@ -672,7 +680,7 @@ mm.add("(min-width:913px)", () => {
            trigger: ".img6",
            start: "top center",
            end: "+=80",
-           scrub: 3,
+           scrub: 2,
        },
        x:-400,
        opacity:0,
@@ -684,7 +692,7 @@ mm.add("(min-width:913px)", () => {
           trigger: ".text6",
           start: "top 80%",
           end: "+=200",
-          scrub: 3,
+          scrub: 2,
       },
       x:400,
       opacity:0,
@@ -696,7 +704,7 @@ mm.add("(min-width:913px)", () => {
             trigger: ".section7",
             start: "top 80%",
             end: "bottom bottom",
-            scrub: 3,
+            scrub: 2,
        },
        x:-400,
        opacity:0,
@@ -709,7 +717,7 @@ mm.add("(min-width:913px)", () => {
             trigger: ".fem",
             start: "top 80%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:-60,
         scale: 0.7,
@@ -722,7 +730,7 @@ mm.add("(min-width:913px)", () => {
             trigger: ".masc",
             start: "top 80%",
             end: "+=70",
-            scrub: 3,
+            scrub: 2,
         },
         rotation:60,
         scale: 0.7,
@@ -750,46 +758,50 @@ mm.add("(min-width:913px)", () => {
             trigger:".page-content",
             start: "top top",
             end: "bottom bottom",
-            scrub: 3,
-            snap: 0.1111,
+            scrub: 1,
+            // snap: 0.1,
         }
     })
     
 
 
-    tl.to(".circle",{x:0,y:h,scale:1.5},section*.5)
+    tl.to(".circle",{x:0,y:h*0.7,rotation:90},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{x:380,y:h*2,scale:1},section*.5)
+    tl.to(".circle",{x:0,y:h*1.7,scale:1.5,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:-380,y:h*3},section*.5)
+    tl.to(".circle",{x:380,y:h*2.7,scale:1,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:380,y:h*4},section*.5)
+    tl.to(".circle",{x:-380,y:h*3.7,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:-380,y:h*5},section*.5)
+    tl.to(".circle",{x:380,y:h*4.7,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:380,y:h*6},section*.5)
+    tl.to(".circle",{x:-380,y:h*5.7,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:-380,y:h*7},section*.5)
+    tl.to(".circle",{x:380,y:h*6.7,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{x:0,y:h*8,opacity:0.5,scale:2},section*.5)
+    tl.to(".circle",{x:-380,y:h*7.7,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*9,scale:0, opacity:0},section*.5)
+    tl.to(".circle",{x:0,y:h*8.7,scale:2,opacity:0.5,rotation:90},section*.5)
+
+    section+=1;
+
+    tl.to(".circle",{y:h*9.7,scale:0,opacity:0,rotation:-90},section*.5)
 
     section+=1;
 

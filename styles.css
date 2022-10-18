@@ -2,18 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #de477f;
     color: #f9cde1;
     overflow-x: hidden;
     font-family: 'Fira Sans', sans-serif;
 }
 
+body{
+    border: white solid 10px;
+    border-radius: 40px;
+}
 
 .liston{
     z-index: 2;
     width: 5%;
     height: auto;
     background: rgba(50, 50, 50, 0) ;
+}
+
+.i-text{
+    z-index: 2;
+    background: rgba(50, 50, 50, 0) ;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.i-img{
+    z-index: 2;
+    background: rgba(50, 50, 50, 0) ;
+    text-align: center;
+    height: 50%;
+}
+
+.inst{
+    text-align: center;
+    z-index: 2;
+    background: rgba(50, 50, 50, 0) ;
+    margin: 2rem 0;
+}
+
+.line{
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(50, 50, 50, 0) ;
+    border-radius: 30px;
+}
+
+.scroll{
+    width: 10%;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
 section{
@@ -23,6 +69,16 @@ section{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #de477f;
+}
+
+.star{
+    width: 4%;
+    position: absolute;
+    top: 110%;
+    right: 60%;
+    z-index: 2;
+    background: rgba(50, 50, 50, 0) ;
 }
 
 .title{
@@ -37,12 +93,14 @@ section{
     z-index: 2;
     font-size: 2rem;
     background: rgba(50, 50, 50, 0) ;
+    font-family: 'DM Serif Display', serif;
 }
 
 .title h1{
     z-index: 2;
     font-size: 2rem;
     background: rgba(50, 50, 50, 0) ;
+    font-family: 'DM Serif Display', serif;
 }
 
 .circle{
@@ -52,9 +110,7 @@ section{
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 400px;
-    background-color: #bb2f62;
-    border-radius: 50%;
+    height: auto;
 }
 
 h2{
@@ -268,6 +324,24 @@ a{
 
 @media screen and (max-width: 500px){
 
+    .inst{
+        font-size: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .scroll{
+        width: 30%;
+    }
+
+    .star{
+        width: 10%;
+        position: absolute;
+        top: 108%;
+        right: 10%;
+        z-index: 3;
+        background: rgba(50, 50, 50, 0) ;
+    }
+
     .intro{
         padding: 1rem;
     }
@@ -282,11 +356,11 @@ a{
     }
 
     .circle{
-        top: 40%;  
+        top: 47%;  
         left: 50%; 
         transform: translate(-50%, -50%);
         width: 300px;
-        height: 300px;
+        height: auto;
     }
 
     .title{
@@ -434,6 +508,23 @@ a{
 
 @media screen and (min-width:500px) and (max-width: 912px){
 
+    .inst{
+        padding: 0 4rem;
+    }
+
+    .scroll{
+        width: 15%;
+    }
+
+    .star{
+        width: 10%;
+        position: absolute;
+        top: 110%;
+        left: 18%;
+        z-index: 2;
+        background: rgba(50, 50, 50, 0) ;
+    }
+
     .intro img{
         width: 35%;
     }
@@ -443,11 +534,11 @@ a{
     }
 
     .circle{
-        top: 45%;  
+        top: 46%;  
         left: 50%; 
         transform: translate(-50%, -50%);
         width: 400px;
-        height: 400px;
+        height: auto;
     }
 
     .title{
