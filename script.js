@@ -223,7 +223,7 @@ mm.add("(max-width: 500px)", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 1,
-            snap: 0.1,
+            //snap: 0.1,
         }
     })
     
@@ -491,7 +491,7 @@ mm.add("((min-width:501px) and (max-width: 912px))", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 1,
-            // snap: 0.1,
+             //snap: 0.1,
         }
     })
     
@@ -759,7 +759,7 @@ mm.add("(min-width:913px)", () => {
             start: "top top",
             end: "bottom bottom",
             scrub: 1,
-            // snap: 0.1,
+            //snap: 0.1,
         }
     })
     
