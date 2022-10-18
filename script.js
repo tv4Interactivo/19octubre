@@ -229,43 +229,43 @@ mm.add("(max-width: 500px)", () => {
     
 
 
-    tl.to(".circle",{y:h*0.72,rotation:90},section*.5)
+    tl.to(".circle",{rotation:90},section*.5)
 
     section+=1;
     
-    tl.to(".circle",{y:h*1.88,scale:1.1,rotation:-90},section*.5)
+    tl.to(".circle",{scale:1.1,rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*3.05,scale:1,rotation:90},section*.5)
+    tl.to(".circle",{scale:1,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*4.05,rotation:-90},section*.5)
+    tl.to(".circle",{rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*5.05,rotation:90},section*.5)
+    tl.to(".circle",{rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*6.05,rotation:-90},section*.5)
+    tl.to(".circle",{rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*7.05,rotation:90},section*.5)
+    tl.to(".circle",{rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.05,rotation:-90},section*.5)
+    tl.to(".circle",{rotation:-90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*8.85, scale:1.5, opacity:0.5,rotation:90},section*.5)
+    tl.to(".circle",{scale:1.5, opacity:0.5,rotation:90},section*.5)
 
     section+=1;
 
-    tl.to(".circle",{y:h*10.05, scale:0, opacity:0,rotation:-90},section*.5)
+    tl.to(".circle",{scale:0, opacity:0,rotation:-90},section*.5)
 
     section+=1;
 
