@@ -356,6 +356,7 @@ a{
     }
 
     .circle{
+        position: fixed;
         top: 47%;  
         left: 50%; 
         transform: translate(-50%, -50%);
@@ -534,7 +535,6 @@ a{
     }
 
     .circle{
-        position: fixed;
         top: 46%;  
         left: 50%; 
         transform: translate(-50%, -50%);
